@@ -32,7 +32,7 @@
 				</header> <!-- end article header -->
 					
 				<section class="post_content clearfix">
-					<?php the_content( __("Read more &raquo;") ); ?>
+					<?php the_content( __('<br /><br /><button type="button" class="btn btn-primary btn-xs"> Read More &raquo;</button>')); ?>
 				</section> <!-- end article section -->
 						
 				<hr />
