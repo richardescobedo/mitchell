@@ -4303,7 +4303,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .label[href]:hover,
 .label[href]:focus {
-  color: #ffffff;
+  color: #FFFFFF;
   text-decoration: none;
   cursor: pointer;
 }
@@ -4315,11 +4315,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   top: -1px;
 }
 .label-default {
-  background-color: #999999;
+  background-color: #4d1979;
 }
 .label-default[href]:hover,
 .label-default[href]:focus {
-  background-color: #808080;
+  background-color: #32104f;
 }
 .label-primary {
   background-color: #4d1979;
@@ -6647,12 +6647,35 @@ li.previous a:hover:before {
   margin-bottom: 18px;
   line-height: 160%;
 }
-.tags {
-  background: none;
-  color: #4d1979;
-}
 .tags a {
-  color: #4d1979;
+  display: inline;
+  padding: .2em .6em .3em;
+  font-size: 75%;
+  font-weight: bold;
+  line-height: 1;
+  color: #ffffff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em;
+  background-color: #4d1979;
+}
+.tags a[href]:hover,
+.tags a[href]:focus {
+  color: #FFFFFF;
+  text-decoration: none;
+  cursor: pointer;
+}
+.tags a:empty {
+  display: none;
+}
+.btn .tags a {
+  position: relative;
+  top: -1px;
+}
+.tags a[href]:hover,
+.tags a[href]:focus {
+  background-color: #32104f;
 }
 /* override standard link hover for the tag cloud widget */
 #tag-cloud a:hover,
