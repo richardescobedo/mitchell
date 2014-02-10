@@ -35,7 +35,7 @@
 					<?php the_content( __("Read more &raquo;") ); ?>
 				</section> <!-- end article section -->
 						
-						
+				<hr />
 				<p class="tags"><?php the_tags(''); ?></p>
 					
 				<?php edit_post_link( __( 'Edit' ), '<span class="edit-link">', '</span>' ); ?>
