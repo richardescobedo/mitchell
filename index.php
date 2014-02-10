@@ -36,7 +36,7 @@
 				</section> <!-- end article section -->
 						
 						
-				<p class="tags"><?php the_tags(); ?></p>
+				<p class="tags"><?php the_tags(''); ?></p>
 					
 				<?php edit_post_link( __( 'Edit' ), '<span class="edit-link">', '</span>' ); ?>
 					
