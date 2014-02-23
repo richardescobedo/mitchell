@@ -4,7 +4,7 @@ Template Name: Homepage
 */
 ?>
 <?php get_header(); ?>
-	
+
 	<!-- Jumbotron -->
 	<div class="container">
 		<div class="row">
