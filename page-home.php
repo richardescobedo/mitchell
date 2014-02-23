@@ -19,8 +19,7 @@ Template Name: Homepage
 				
 
 			</div>
+				<?php edit_post_link( __( 'Edit' ), '<span class="edit-link">', '</span>' ); ?>
 			</div>
-
-
 <?php get_sidebar();?>
 <?php get_footer();?>
