@@ -34,17 +34,18 @@ function gallery_shortcode_tbs($attr) {
 // Buttons
 function buttons( $atts, $content = null ) {
 	extract( shortcode_atts( array(
-	'type' => 'default', /* primary, default, info, success, danger, warning, inverse */
+	'kind' => 'default', /* primary, default, info, success, danger, warning, inverse */
 	'size' => 'default', /* mini, small, default, large */
 	'url'  => '',
 	'text' => '', 
+	'type' => '',
 	), $atts ) );
 	
-	if($type == "default"){
-		$type = "";
+	if($kind == "default"){
+		$kind = "";
 	}
 	else{ 
-		$type = "btn-" . $type;
+		$kind = "btn-" . $kind;
 	}
 	
 	if($size == "default"){
@@ -54,7 +55,6 @@ function buttons( $atts, $content = null ) {
 		$size = "btn-" . $size;
 	}
 	
-	$output = '<a href="' . $url . '" class="btn '. $type . ' ' . $size . '">';
 	$output .= $text;
 	$output .= '</a>';
 	
