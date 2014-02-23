@@ -3,7 +3,7 @@
 			<form class="hidden-sm hidden-xs" role="form">
 				<fieldset>
 					<div class="form-group">
-						<input type="text" name="input" class="form-control" placeholder="Enter your search term and press enter" >
+						<?php get_search_form(); ?>
 					</div>	
 				</fieldset>
 				            <hr />
