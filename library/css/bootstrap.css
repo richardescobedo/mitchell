@@ -274,6 +274,9 @@ footer .footer-bottom {
 .text-justify {
   text-align: justify;
 }
+.form-control {
+  text-style: italic;
+}
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -6355,6 +6358,7 @@ fieldset[disabled] #cancel-comment-reply-link.active {
 .comment-form-email textarea,
 .comment-form-url textarea,
 .comment-form-comment textarea {
+  text-style: italic;
   display: block;
   width: 100%;
   height: 34px;
