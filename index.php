@@ -35,7 +35,6 @@
 					<?php the_content( __('<br /><br /><button type="button" class="btn btn-primary btn-xs"> Read More &raquo;</button>')); ?>
 				</section> <!-- end article section -->
 						
-				<hr />
 				<p class="tags"><?php the_tags(''); ?></p>
 					
 				<?php edit_post_link( __( 'Edit' ), '<span class="edit-link">', '</span>' ); ?>
