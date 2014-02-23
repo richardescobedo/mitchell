@@ -55,6 +55,14 @@ function buttons( $atts, $content = null ) {
 		$size = "btn-" . $size;
 	}
 	
+	if($type == "default"){
+		$type = "";
+		}
+	else{
+		$type ="button" . $type;
+	}
+	
+	$output = '<a type="' . $type . '" class="btn '. $kind . ' ' . $size . '" href="' . $url . '">';
 	$output .= $text;
 	$output .= '</a>';
 	
