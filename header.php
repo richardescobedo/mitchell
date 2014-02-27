@@ -51,11 +51,12 @@ echo ' | ' . sprintf( __( 'Page %s', 'shape' ), max( $paged, $page ) );
         		<span class="icon-bar"></span>
         	</button>
         	
-        	<a class="visible-xs navbar-brand" href="#">Phi Kappa Sigma | Beta Theta</a>
+        	<a class="visible-xs navbar-brand" href="<?php echo site_url(); ?>">Phi Kappa Sigma | Beta Theta</a>
 			</div>
 			
 			<div class="navbar-collapse collapse navHeaderCollapse">
 				<?php wp_bootstrap_main_nav(); // Adjust using Menus in Wordpress Admin ?>
+				
 				<div class="navbar-text pull-right">
         		<i>Stellis aequus durando.</i>
         		</div>
