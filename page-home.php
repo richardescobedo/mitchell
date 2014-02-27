@@ -19,7 +19,7 @@ Template Name: Homepage
 				
 
 			</div>
-				<a href="<?php echo get_edit_post_link( $id, $context ); ?>"><button class="btn btn-primary btn-xs"><strong>Edit the homepage</strong></button></a>
+				<?php edit_post_link( '<button class="btn btn-primary btn-xs"><strong>Edit the homepage</strong></button>', '', '', $id ); ?>
 			</div>
 				
 				<?php endwhile; ?>
