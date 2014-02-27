@@ -7,4 +7,7 @@
 			</span>
 		</div>
     </fieldset>
+    
+    <hr />
 </form>
+
