@@ -497,11 +497,11 @@ add_action('login_head', 'custom_login');
 
 
 //Add class to edit button
-function custom_edit_post_link($output) {
- $output = str_replace('class="post-edit-link"', 'class="new-edit-class"', $output);
- return $output;
-}
-add_filter('edit_post_link', 'custom_edit_post_link');
+//function custom_edit_post_link($output) {
+//$output = str_replace('class="post-edit-link"', 'class="new-edit-class"', $output);
+//return $output;
+//}
+//add_filter('edit_post_link', 'custom_edit_post_link');
 
 //My functions
 function string_limit_words($string, $word_limit)
