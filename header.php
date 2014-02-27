@@ -28,8 +28,6 @@ echo ' | ' . sprintf( __( 'Page %s', 'shape' ), max( $paged, $page ) );
 
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-
-    <link href="<?php echo get_bloginfo('template_directory');?>/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
   	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic' rel='stylesheet' type='text/css'>
   <?php wp_head(); ?>
   </head>
