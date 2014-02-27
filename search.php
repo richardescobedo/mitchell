@@ -2,9 +2,6 @@
 	
 	<!-- Begin page content -->
 	<div class="container">
-		<div class="row">
-			<div class="col-lg-8 text-justify">
-			
 	
 		<div id="content" class="row">
 			<div id="main" class="col-lg-8 text-justify">
