@@ -45,7 +45,7 @@ function wp_bootstrap_queue_js(){ if (!is_admin()){ if ( is_singular() AND comme
 function wp_bootstrap_excerpt_more($more) {
 	global $post;
 	// edit here if you like
-	return '...  <a href="'. get_permalink($post->ID) . '" class="more-link" title="Read '.get_the_title($post->ID).'">Read more &raquo;</a>';
+	return '...  <a href="'. get_permalink($post->ID) . '" class="more-link" title="Read '.get_the_title($post->ID).'"><br /><br /><button type="button" class="btn btn-primary btn-xs"> Read More<i class="fa fa-angle-double-right fa-fw"></i></button></a>';
 }
 add_filter('excerpt_more', 'wp_bootstrap_excerpt_more');
 
@@ -185,13 +185,13 @@ function page_navi($before = '', $after = '') {
 
 	echo $before.'<ul class="pagination">'."";
 	if ($paged > 1) {
-		$first_page_text = "&laquo";
+		$first_page_text = '<i class="fa fa-long-arrow-left"></i> Previous';
 		echo '<li class="prev"><a href="'.get_pagenum_link().'" title="First">'.$first_page_text.'</a></li>';
 	}
 
-	$prevposts = get_previous_posts_link('&larr; Previous');
-	if($prevposts) { echo '<li>' . $prevposts  . '</li>'; }
-	else { echo '<li class="disabled"><a href="#">&larr; Previous</a></li>'; }
+	// $prevposts = get_previous_posts_link('&larr; Previous');
+	//if($prevposts) { echo '<li>' . $prevposts  . '</li>'; }
+	//else { echo '<li class="disabled"><a href="#"><i class="fa fa-long-arrow-left"></i> Previous</a></li>'; }
 
 	for($i = $start_page; $i  <= $end_page; $i++) {
 		if($i == $paged) {
@@ -201,10 +201,10 @@ function page_navi($before = '', $after = '') {
 		}
 	}
 	echo '<li class="">';
-	next_posts_link('Next &rarr;');
+	next_posts_link('Next <i class="fa fa-long-arrow-right"></i>');
 	echo '</li>';
 	if ($end_page < $max_page) {
-		$last_page_text = "&raquo;";
+		$last_page_text = '<i class="fa fa-long-arrow-left"></i>';
 		echo '<li class="next"><a href="'.get_pagenum_link($max_page).'" title="Last">'.$last_page_text.'</a></li>';
 	}
 	echo '</ul>'.$after."";
