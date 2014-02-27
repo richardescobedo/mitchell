@@ -44,7 +44,7 @@
 						</nav>
 					<?php } ?>		
 					
-				<?php edit_post_link( __( 'Edit' ), '<span class="edit-link">', '</span>' ); ?>
+					<?php else : ?>
 					
 			</article>
 			<?php endwhile; ?>
