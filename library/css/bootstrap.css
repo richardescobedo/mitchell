@@ -378,8 +378,8 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: inherit;
-  font-weight: 500;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
   line-height: 1.1;
   color: inherit;
 }
@@ -6013,13 +6013,13 @@ ul.nav .dropdown > .dropdown-menu .caret {
 }
 #main article {
   margin-bottom: 18px;
-  border-bottom: 1px solid #eeeeee;
+  /* border-bottom: 1px solid #eeeeee; */
   padding: 0 0 9px;
 }
 #main article footer {
-  border-top: none;
+  border-top: 1px solid #eeeeee;
   margin-top: 0;
-  padding-top: 0;
+  padding-top: 9px;
   position: relative;
   min-height: 20px;
   background: none;
