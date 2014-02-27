@@ -1,11 +1,6 @@
-<?php 
-/**
- * Search
- */
- 
- get_header(); ?>
+<?php get_header(); ?>
 	
-	<!-- Begin Post Content -->
+	<!-- Begin page content -->
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-8 text-justify">
