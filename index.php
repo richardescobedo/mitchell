@@ -46,6 +46,17 @@
 					
 					<?php else : ?>
 					
+					<article id="post-not-found">
+						<header>
+							<h1><?php _e("Sorry, y'all, something went wrong.", "wpbootstrap"); ?></h1>
+						</header>
+					
+						<section class="post_content">
+							<p><?php _e('<p>Either what you are looking for has gone missing or Alex Shelly did something that broke our website. In either event, we are looking into it.</p> <p>If you have a question, please <a href="http://tcuphikaps.com/contact">contact us</a>.</p>', "wpbootstrap"); ?></p>
+						</section>
+					</article>
+				
+				<?php endif; ?>
 			</div>
 		
 
