@@ -3,8 +3,6 @@
 			
 				<?php get_search_form(); ?>
 				
-				<hr />
-				
 				<img src="http://placehold.it/400x400&text=Maltese+Cross+Newsletter" class="display-block img-responsive img-rounded hidden-sm hidden-xs" />
 				
 				<div class="page-header"><h3><span>Beta Theta Bulletin</span></h3></div>
