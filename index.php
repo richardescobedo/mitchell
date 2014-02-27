@@ -2,26 +2,35 @@
 	
 	<!-- Begin page content -->
 	<div class="container">
-		<div class="row">
-			<div class="col-lg-8 text-justify">
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-<?php /* Create an HTML5 article section with a unique ID thanks to the_ID() and semantic classes with post_class() */ ?>
-			<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
-				<header>
-					<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail( 'wpbs-featured' ); ?></a>
-						<div class="page-header">
-							<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-						</div>
+	
+		<div id="content" class="row">
+			<div id="main" class="col-lg-8">
+			
+				<?php /* Start the Loop */ if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+			
+				<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+					<header>
+						<div class="page-header"><h2 class="page-title" itemprop="headline"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2></div>
+					</header><!-- End of Article Header -->
 						
-						<p class="meta"><?php _e("Posted", "wpbootstrap"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php the_time(); ?></time> <?php _e("by", "wpbootstrap"); ?> <?php the_author_posts_link(); ?> <span class="amp">&</span> <?php _e("in", "wpbootstrap"); ?> <?php the_category(', '); ?>.</p>
-				</header> <!-- end article header -->
+					<p class="meta"><?php _e("Posted at", "wpbootstrap"); ?> <time datetime="<?php echo the_time('F-j-y'); ?>" pubdate><?php the_time(); ?></time> <?php _e("by", "wpbootstrap"); ?> <?php the_author_posts_link(); ?> <?php _e("in", "wpbootstrap"); ?> <?php the_category(', '); ?>.</p>
+				
+					<section class="post-content text-justify clearfix">
+						<?php the_content( __('<br /><br /><button type="button" class="btn btn-primary btn-xs"> Read More<i class="fa fa-angle-double-right fa-fw"></i></button>')); ?>
+					</section> 
 					
-				<section class="post_content clearfix">
-					<?php the_content( __('<br /><br /><button type="button" class="btn btn-primary btn-xs"> Read More &raquo;</button>')); ?>
-				</section> <!-- end article section -->
-						
-				<p class="tags"><?php the_tags(''); ?></p>
+					<!-- End of Article Section -->
+					<footer>
+						<p class="tags"><?php the_tags('',' ',''); ?></p>
+						<a href="<?php echo get_edit_post_link( $id, $context ); ?>"><button class="btn btn-primary btn-xs"><strong>Edit this post</strong></button></a>
+					</footer>
+				</article><!-- End of Article -->
+									
+					
+					
+			
+				<?php endwhile; ?>
+				
 					
 				<?php edit_post_link( __( 'Edit' ), '<span class="edit-link">', '</span>' ); ?>
 					
