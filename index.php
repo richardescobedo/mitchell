@@ -46,8 +46,6 @@
 					
 					<?php else : ?>
 					
-			</article>
-			<?php endwhile; ?>
 			</div>
 		
 
