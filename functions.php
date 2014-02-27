@@ -452,6 +452,9 @@ if( !function_exists("theme_styles") ) {
         
         wp_register_style( 'theme', get_template_directory_uri() . '/library/css/theme.css',array(),'1.0','all' );
         wp_enqueue_style( 'theme' );
+        
+        wp_register_style( 'font-awesome', get_template_directory_uri() . '/font-awesome/css/font-awesome.min.css',array(), '4.0.3','all');
+        wp_enqueue_style( 'font-awesome' );
 
         // For child themes
         wp_register_style( 'wpbs-style', get_stylesheet_directory_uri() . '/style.css', array(), '1.0', 'all' );
