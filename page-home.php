@@ -16,8 +16,6 @@ Template Name: Homepage
 				
 				<?php the_content(); ?>
 				
-				
-
 			</div>
 				<?php edit_post_link( '<button class="btn btn-primary btn-xs"><strong>Edit the homepage</strong></button>', '', '', $id ); ?>
 			</div>
