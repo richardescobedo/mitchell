@@ -13,3 +13,6 @@ This theme was developed using Twitter's Bootstrap, and therefore all styling in
 A special thanks to Eddie Machado for his Bones WordPress framework, as well as 320Press for developing WordPress Bootstrap, the foundation for a good amount of this theme's functionality.
 */
 
+.fw-icon-white {
+	color:#FFFFFF;
+	}
