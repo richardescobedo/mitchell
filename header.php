@@ -48,7 +48,7 @@ echo ' | ' . sprintf( __( 'Page %s', 'shape' ), max( $paged, $page ) );
 				<i class="fa fa-bars fa-fw fw-icon-white"></i>
         	</button>
         	
-        	<a class="visible-xs navbar-brand" href="<?php echo site_url(); ?>">Phi Kappa Sigma | Beta Theta</a>
+        	<a class="visible-xs navbar-brand display-block navbar-btn" href="<?php echo site_url(); ?>">Phi Kappa Sigma | Beta Theta</a>
 			</div>
 			
 			<div class="navbar-collapse collapse navHeaderCollapse">
