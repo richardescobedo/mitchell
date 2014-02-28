@@ -6,7 +6,7 @@
 	<?php /* Start the Loop */ if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
      
 		<div class="row">
-			<div class="col-lg-8 text-justify">
+			<div id="main" class="col-lg-8 col-md-8">
 				<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 					<header>
 						<div class="page-header"><h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1></div>
