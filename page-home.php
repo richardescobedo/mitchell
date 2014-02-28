@@ -13,8 +13,10 @@ Template Name: Homepage
 				
 					<?php /* Start the Loop */ while ( have_posts() ) : the_post(); ?>
 				
-			</div>
-				<?php edit_post_link( '<button class="btn btn-primary btn-xs"><strong>Edit the homepage</strong></button>', '', '', $id ); ?>
+					<?php the_content(); ?>
+				
+				</div>
+					<?php edit_post_link( '<button class="btn btn-primary btn-xs"><strong>Edit the homepage</strong></button>', '', '<br /><br />', $id ); ?>
 			</div>
 				
 				<?php endwhile; ?>
