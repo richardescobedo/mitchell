@@ -18,7 +18,7 @@
 					<div class="panel-heading"><h3 class="panel-title"><span>Alumni Central</span></h3></div>
 						<div class="panel-body">
 							<p>The Beta Theta Alumni Association hosts events for alumni each semester, so to be sure you're notified, make sure your contact information is always up to date.</p> 
-							<p><a class="btn btn-default btn-block" href="<?php get_site_url(); ?>/alumni/update-contact-information" type="button">Update your contact information</a></p>
+							<p><a class="btn btn-default btn-block" href="<?php echo get_site_url('','alumni/update-contact-information',''); ?>" type="button">Update your contact information</a></p>
 						</div>
 				</div>
 					
