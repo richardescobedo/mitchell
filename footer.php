@@ -10,7 +10,8 @@
 						<p>
 						<a href="https://www.facebook.com/groups/64416576792/"><button type="button" class="btn btn-primary"><i class="fa fa-facebook"></i></button></a>
 						<a href="http://www.linkedin.com/groupInvitation?groupID=156115&sharedKey=1584AC73A27B"><button type="button" class="btn btn-primary"><i class="fa fa-linkedin"></i></button></a>
-						<a href="http://pks.org"><button type="button" class="btn btn-primary">ΦΚΣ</button>
+						<a href="http://pks.org"><button type="button" class="btn btn-primary">ΦΚΣ</button></a>
+						</p>
 					</div>
 				</div>
 			</div>
