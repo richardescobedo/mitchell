@@ -61,5 +61,5 @@
 			</div>
 		
 
-<?php get_sidebar();?>
+<?php include(TEMPLATEPATH."/sidebar-sidebar2.php");?>
 <?php get_footer();?>
