@@ -3,7 +3,7 @@
 	<!-- Begin page content -->
 	<div class="container">     
 		<div class="row">
-			<div class="col-lg-8">
+			<div id="main" class="col-lg-8 col-md-8">
 				<h1 class="page-title" itemprop="headline"><?php _e( "Uh-oh, y'all...", 'twentythirteen' ); ?></h1>
 					<section class="text-justify post_content clearfix" itemprop="articleBody">
 					<h3>It looks like our website is actin' up.</h3>
