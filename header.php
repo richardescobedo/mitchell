@@ -29,6 +29,13 @@ echo ' | ' . sprintf( __( 'Page %s', 'shape' ), max( $paged, $page ) );
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
   	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic' rel='stylesheet' type='text/css'>
+  	
+  	<!--Apple Touch Icons--!>
+  	<link rel="apple-touch-icon" href="<?php echo get_bloginfo('template_directory');?>/library/i/touch-icon-iphone.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="<?php echo get_bloginfo('template_directory');?>/library/i/touch-icon-ipad.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="<?php echo get_bloginfo('template_directory');?>/library/i/touch-icon-iphone-retina.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="<?php echo get_bloginfo('template_directory');?>/library/i/touch-icon-ipad-retina.png">
+	
   <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>
