@@ -22,6 +22,12 @@
 						</div>
 				</div>
 				
+				<div class="panel panel-default clearfix">					
+					<a href="http://www.pks.org/pdf/PKSMC13.pdf"><img src="<?php echo get_bloginfo('template_directory');?>/library/i/maltese-cross-spring-13.png" class="display-block img-responsive" /></a>
+					<div class="panel-banner">Maltese Cross – Spring '13</div>
+				</div>
+				<br />
+				
 			</div>
 			
 		</div>
