@@ -66,3 +66,4 @@ echo ' | ' . sprintf( __( 'Page %s', 'shape' ), max( $paged, $page ) );
 		</div>
 	</nav>
 	<!-- End Nav -->
+	<div class="container"><?php if (function_exists('bootstrap_breadcrumbs')) bootstrap_breadcrumbs(); ?></div>
