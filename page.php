@@ -17,7 +17,7 @@
 					</section> 
 					
 					<!-- End article -->
-					<?php edit_post_link( '<button class="btn btn-primary btn-lg pull-right"><strong>Edit this page</strong></button>', '', '', $id ); ?>
+					<?php edit_post_link( '<button class="btn btn-primary btn-lg pull-right"><strong>Edit this page</strong></button>', '<hr />', '<br /><br /><br />', $id ); ?>
 					
 				</article>
 				
