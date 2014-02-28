@@ -395,7 +395,7 @@ class Bootstrap_walker extends Walker_Nav_Menu{
 
    	// if the item has children add these two attributes to the anchor tag
    	if ( $args->has_children ) {
-		$attributes .= ' class="dropdown-toggle" data-toggle="dropdown"';
+		$attributes .= ' class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"';
     }
 
     $item_output = $args->before;
