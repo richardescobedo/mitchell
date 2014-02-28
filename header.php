@@ -45,10 +45,7 @@ echo ' | ' . sprintf( __( 'Page %s', 'shape' ), max( $paged, $page ) );
 		<div class="container">
 			<div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
-				<span class="sr-only">Toggle navigation</span>
-        		<span class="icon-bar"></span>
-        		<span class="icon-bar"></span>
-        		<span class="icon-bar"></span>
+				<i class="fa fa-bars fa-fw fw-icon-white"></i>
         	</button>
         	
         	<a class="visible-xs navbar-brand" href="<?php echo site_url(); ?>">Phi Kappa Sigma | Beta Theta</a>
