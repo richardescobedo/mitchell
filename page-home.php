@@ -29,8 +29,8 @@ Template Name: Homepage
 						<br />
 							<div class="btn-group-vertical center-block">
 							
-							<a href="<?php get_site_url(); ?>about" type="button" class="center-block btn btn-primary btn-lg">Learn about us <i class="fa fa-angle-right"></i> </a>	
-							<a href="<?php get_site_url(); ?>recruitment" type="button" class="center-block btn btn-primary btn-lg">Become a Phi Kap <i class="fa fa-angle-right"></i> </a>
+							<a href="<?php echo get_site_url('','about',''); ?>" type="button" class="center-block btn btn-primary btn-lg">Learn about us <i class="fa fa-angle-right"></i> </a>	
+							<a href="<?php echo get_site_url('','recruitment',''); ?>" type="button" class="center-block btn btn-primary btn-lg">Become a Phi Kap <i class="fa fa-angle-right"></i> </a>
 							</div>		
 					</div>		
 				</div>
