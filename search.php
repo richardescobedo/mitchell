@@ -17,7 +17,7 @@
 						
 					<p class="meta"><?php _e("Posted at", "wpbootstrap"); ?> <time datetime="<?php echo the_time('F-j-y'); ?>" pubdate><?php the_time(); ?></time> <?php _e("by", "wpbootstrap"); ?> <?php the_author_posts_link(); ?> <?php _e("in", "wpbootstrap"); ?> <?php the_category(', '); ?>.</p>
 				
-					<section class="post-content clearfix">
+					<section class="post-content text-justify clearfix">
 						<?php the_excerpt('<span class="read-more">' . __("Read more on","wpbootstrap") . ' "'.the_title('', '', false).'" &raquo;</span>'); ?>
 					</section> 
 					
