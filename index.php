@@ -13,7 +13,7 @@
 						<div class="page-header"><h2 class="page-title" itemprop="headline"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2></div>
 					</header><!-- End of Article Header -->
 						
-					<p class="meta"><?php _e("Posted at", "wpbootstrap"); ?> <time datetime="<?php echo the_time('F-j-y'); ?>" pubdate><?php the_time(); ?></time> <?php _e("by", "wpbootstrap"); ?> <?php the_author_posts_link(); ?> <?php _e("in", "wpbootstrap"); ?> <?php the_category(', '); ?>.</p>
+					<p class="meta"><?php _e("Posted on", "wpbootstrap"); ?> <date datetime="<?php echo the_time('F, j, Y'); ?>" pubdate><?php the_date('F, j, Y'); ?></date> <?php _e("by", "wpbootstrap"); ?> <?php the_author_posts_link(); ?> <?php _e("in", "wpbootstrap"); ?> <?php the_category(', '); ?>.</p>
 				
 					<section class="post-content text-justify clearfix">
 						<?php the_content( __('<br /><br /><button type="button" class="btn btn-primary btn-xs"> Read More<i class="fa fa-angle-double-right fa-fw"></i></button>')); ?>
