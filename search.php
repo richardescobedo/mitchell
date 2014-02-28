@@ -4,7 +4,7 @@
 	<div class="container">
 	
 		<div id="content" class="row">
-			<div id="main" class="col-lg-8 text-justify">
+			<div id="main" class="col-lg-8 col-md-8">
 			
 				<div class="page-header"><h1><span><?php _e("Search Results for","wpbootstrap"); ?>:</span> <?php echo esc_attr(get_search_query()); ?></h1></div>
 			
