@@ -4,7 +4,7 @@
 	<div class="container">
 	
 		<div id="content" class="row">
-			<div id="main" class="col-lg-8">
+			<div id="main" class="col-lg-8 col-md-8">
 			
 				<?php /* Start the Loop */ if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 			
