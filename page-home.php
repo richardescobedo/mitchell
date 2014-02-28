@@ -26,8 +26,9 @@ Template Name: Homepage
 						<img src="<?php echo get_bloginfo('template_directory');?>/library/i/shield.png" class="center-block" />
 						<br />
 							<div class="btn-group-vertical center-block">
-							<a href="http://tcuphikaps.com/about" type="button" class="center-block btn btn-primary btn-lg">Learn about us <i class="fa fa-angle-right"></i> </a>	
-							<a href="http://tcuphikaps.com/recruitment type="button" class="center-block btn btn-primary btn-lg">Become a Phi Kap <i class="fa fa-angle-right"></i> </a>
+							
+							<a href="<?php get_site_url(); ?>about" type="button" class="center-block btn btn-primary btn-lg">Learn about us <i class="fa fa-angle-right"></i> </a>	
+							<a href="<?php get_site_url(); ?>recruitment" type="button" class="center-block btn btn-primary btn-lg">Become a Phi Kap <i class="fa fa-angle-right"></i> </a>
 							</div>		
 					</div>		
 				</div>
