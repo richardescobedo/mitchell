@@ -8,13 +8,10 @@ Template Name: Homepage
 	<!-- Jumbotron -->
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12 col-sm-12 col-md-8 hidden-xs">
-			<div class="jumbotron">
-				<?php /* Start the Loop */ ?>
-				<?php while ( have_posts() ) : the_post(); ?>
-				<h1><?php the_title(); ?></h1>
+			<div id="main" class="col-lg-8 col-md-8 hidden-xs">
+				<div class="jumbotron">
 				
-				<?php the_content(); ?>
+					<?php /* Start the Loop */ while ( have_posts() ) : the_post(); ?>
 				
 			</div>
 				<?php edit_post_link( '<button class="btn btn-primary btn-xs"><strong>Edit the homepage</strong></button>', '', '', $id ); ?>
