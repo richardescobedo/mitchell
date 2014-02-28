@@ -12,7 +12,7 @@
 						<div class="page-header"><h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1></div>
 					</header>
 					
-					<section class="post_content clearfix" itemprop="articleBody">
+					<section class="post_content text-justify clearfix" itemprop="articleBody">
 					<?php the_content(); ?>
 					</section> 
 					
