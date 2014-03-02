@@ -534,7 +534,7 @@ function bootstrap_breadcrumbs() {
 	$show_on_home   = 0; // 1 - show breadcrumbs on the homepage, 0 - don't show
 	$show_home_link = 1; // 1 - show the 'Home' link, 0 - don't show
 	$show_title     = 1; // 1 - show the title for the links, 0 - don't show
-	$delimiter      = ' <span class="divider">/</span> '; // delimiter between crumbs
+	$delimiter      = ' <span class="divider"> / </span> '; // delimiter between crumbs
 	$before         = '<li class="active"><span class="current">'; // tag before the current crumb
 	$after          = '</span></li>'; // tag after the current crumb
 	/* === END OF OPTIONS === */
