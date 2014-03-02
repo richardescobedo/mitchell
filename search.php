@@ -22,12 +22,13 @@
 					</section> 
 					
 					<!-- End of Article Section -->
-
+					<footer>
+						<p class="tags"><?php the_tags('',' ',''); ?></p>
+						<?php edit_post_link( '<button class="btn btn-primary btn-xs"><strong>Edit this post</strong></button>', '', '', $id ); ?>
+					</footer>
 				</article><!-- End of Article -->
 									
-					<p class="tags"><?php the_tags('',' ',''); ?></p>
 					
-					<a href="<?php echo get_edit_post_link( $id, $context ); ?>"><button class="btn btn-primary btn-xs"><strong>Edit this post</strong></button></a>
 					
 			
 				<?php endwhile; ?>
