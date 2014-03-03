@@ -13,7 +13,7 @@
 							<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 								<header><a href="<?php the_permalink() ?>"><h4><?php the_title(); ?></h4></a></header>
 						
-								<section><?php the_excerpt(__('(more…)')); echo string_limit_words($excerpt,2); ?></section>
+								<section><?php global $more; $more = 0; ?><?php the_content('<br /><br /><button type="button" class="btn btn-primary btn-xs"> Read More<i class="fa fa-angle-double-right fa-fw"></i></button>'); ?></section>
 								
 								<?php if( $the_query->current_post < $the_query->post_count-1 ) echo '<hr />'; ?>
 								
