@@ -18,7 +18,7 @@
 					<p class="meta"><?php _e("Posted on", "wpbootstrap"); ?> <date datetime="<?php echo the_time('F, j, Y'); ?>" pubdate><?php the_date('F, j, Y'); ?></date> <?php _e("by", "wpbootstrap"); ?> <?php the_author_posts_link(); ?> <?php _e("in", "wpbootstrap"); ?> <?php the_category(', '); ?>.</p>
 				
 					<section class="post-content text-justify clearfix">
-						<?php the_content( __('<br /><br /><button type="button" class="btn btn-primary btn-xs"> Read More<i class="fa fa-angle-double-right fa-fw"></i></button>')); ?>
+						<?php the_excerpt( __('<br /><br /><button type="button" class="btn btn-primary btn-xs"> Read More<i class="fa fa-angle-double-right fa-fw"></i></button>')); ?>
 					</section> 
 					
 					<!-- End of Article Section -->
