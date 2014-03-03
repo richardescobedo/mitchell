@@ -550,11 +550,11 @@ function bootstrap_breadcrumbs() {
  
 	if (is_home() || is_front_page()) {
  
-		if ($show_on_home == 1) echo '<ol class="breadcrumb"><a href="' . $home_link . '">' . $text['home'] . '</a></ol>';
+		if ($show_on_home == 1) echo '<div class="container"><ol class="breadcrumb"><a href="' . $home_link . '">' . $text['home'] . '</a></ol></div>';
  
 	} else {
  
-		echo '<ol class="breadcrumb" xmlns:v="http://rdf.data-vocabulary.org/#">';
+		echo '<div class="container"><ol class="breadcrumb" xmlns:v="http://rdf.data-vocabulary.org/#">';
 		if ($show_home_link == 1) {
 			echo '<li><a href="' . $home_link . '" rel="v:url" property="v:title">' . $text['home'] . '</a></li>';
 			if ($frontpage_id == 0 || $parent_id != $frontpage_id) echo $delimiter;
@@ -666,7 +666,7 @@ function bootstrap_breadcrumbs() {
 			if ( is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author() ) echo ')';
 		}
  
-		echo '</ol><!-- .breadcrumbs -->';
+		echo '</ol></div><!-- .breadcrumbs -->';
  
 	}
 } // end bootstrap_breadcrumbs()
