@@ -40,7 +40,7 @@ echo ' | ' . sprintf( __( 'Page %s', 'shape' ), max( $paged, $page ) );
   	<!-- Superheader -->
   	<div id="super-header" class="hidden-xs">
   		<div class="container">
-  		<img src="<?php echo get_bloginfo('template_directory');?>/library/i/pks-wordmark.png" class="display-block img-responsive hidden-xs" />
+  		<a class="pks-wordmark-logo" href="<?php echo get_site_url(); ?>">Phi Kappa Sigma Beta Theta Chapter at TCU</a>
   		</div>
   		
   	</div>
