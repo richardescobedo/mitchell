@@ -528,7 +528,7 @@ function bootstrap_breadcrumbs() {
 	$text['search']   = 'Search Results for "%s"'; // text for a search results page
 	$text['tag']      = 'Posts Tagged "%s"'; // text for a tag page
 	$text['author']   = 'Articles Posted by %s'; // text for an author page
-	$text['404']      = 'Error 404'; // text for the 404 page
+	$text['404']      = "Uh-oh, y'all..."; // text for the 404 page
  
 	$show_current   = 1; // 1 - show current post/page/category title in breadcrumbs, 0 - don't show
 	$show_on_home   = 0; // 1 - show breadcrumbs on the homepage, 0 - don't show
