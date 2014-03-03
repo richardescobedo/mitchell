@@ -509,14 +509,6 @@ add_action('login_head', 'custom_login');
 //}
 //add_filter('edit_post_link', 'custom_edit_post_link');
 
-//My functions
-function string_limit_words($string, $word_limit)
-{
-  $words = explode(' ', $string, ($word_limit + 1));
-  if(count($words) > $word_limit)
-  array_pop($words);
-  return implode(' ', $words);
-}
 
 /************* Breadcrumbs *********************/
  
@@ -671,7 +663,7 @@ function bootstrap_breadcrumbs() {
 	}
 } // end bootstrap_breadcrumbs()
 
-// Allow template to be used on post page
+// Allow templates to be used on post page
 
 function posts_page_custom_template($template)
 {
