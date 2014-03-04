@@ -3,8 +3,8 @@
 			<div class="footer-bottom">
 				<div class="container">
 					<div class="navbar-text navbar-left">
-					<p>All Content &copy; Copyright 2014, Phi Kappa Sigma - Beta Theta.</p>
-					<p>Designed and produced by <a href="http://richard-escobedo.com">Richard Escobedo</a>. Built with <a href="http://getbooststrap.com">Bootstrap</a>.</p>
+					<p>All Content &copy; Copyright 2014, Phi Kappa Sigma - Beta Theta.
+					<br /><small>Designed and produced by <a href="http://richard-escobedo.com">Richard Escobedo</a>. Built with <a href="http://getbooststrap.com">Bootstrap</a>.</small></p>
 					</div>
 					<div class="navbar-text navbar-right">
 						<p>
